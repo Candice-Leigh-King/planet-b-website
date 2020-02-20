@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% for item in page.col-block %}
+<section class="grid">
+  <div class="col-12">
+    <img src="{{item.image}}" alt="{{item.image-alt}}">
+  </div>
+
+</section>
+{% endfor %}
