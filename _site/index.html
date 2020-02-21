@@ -14,36 +14,34 @@
 <body class="home">
 
   <header>
-    <div class="header-inner centered">
-      <a href="/story.html"> story </a>
-      <a href="/shop.html"> shop </a>
-      <a href="/index.html" class="logo">
+    <div class=" header-inner centered">
+      <a href="/story.html" class = "grow"> story </a>
+      <a href="/shop.html" class = "grow"> shop </a>
+      <a href="/index.html" class="logo grow">
           <img src="/images/logo-for-web-01.png">
           <h1> Planet <span>B</span> </h1>
       </a>
-      <a href="explore.html"> explore </a>
-      <a href="connect.html"> connect </a>
+      <a href="explore.html" class ="grow"> explore </a>
+      <a href="connect.html" class ="grow"> connect </a>
   </div>
 </header>
 
 <!-- insert java page turn -->
 <div class="image-slider">
-  <div class="bg-image" style="background-image: url('/images/bg1.jpg');"> </div>
-  <div class="bg-image" style="background-image: url('/images/bg2.jpg');"> </div>
-  <div class="bg-image" style="background-image: url('/images/bg3.jpg');"> </div>
+  <div class="bg-image" style="background-image: url('/images/page1-01.jpg');"> </div>
+  <div class="bg-image" style="background-image: url('/images/page2-02.jpg');"> </div>
+  <div class="bg-image" style="background-image: url('/images/page3-02.jpg');"> </div>
+  <div class="bg-image" style="background-image: url('/images/page4-01.jpg');"> </div>
 </div>
 
 
 <footer class="col-12 center">
   <nav class="inline socials">
-    <a href="https://www.facebook.com/PlanetB.projects/" "_blank">
-      <i class="fab fa-facebook-square"></i>
+    <a href="https://www.facebook.com/PlanetB.projects/"target="_blank" class="grow">
+      <i class="fab fa-facebook-square grow"></i>
     </a>
-    <a href="https://www.instagram.com/candy_and_the_king/">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.youtube.com/channel/UCzqnx2C9vn72mlxpa4l2oFA">
-      <i class="fab fa-youtube"></i>
+    <a href = "<a href="mailto:joe@example.com?subject=feedback">
+        <i class="far fa-envelope grow"></i>
     </a>
   </nav>
 </footer>
@@ -56,7 +54,7 @@
 $(document).ready(function(){
   $('.image-slider').slick({
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 2000
   });
 });
 

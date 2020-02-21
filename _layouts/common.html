@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
+
 {% for item in page.col-block %}
 <section class="grid">
-  <div class="col-4">
-    <img src="{{item.image}}" alt="{{item.image-alt}}">
-    <h2> {{item.title}}</h2>
+  <div class="col-4 common-image centered">
+    <a href= "{{item.link}}">
+      <img src="{{item.image}}" alt="{{item.image-alt}}">
+      <h2> {{item.booktitle}}</h2>
+    </a>
+
   </div>
-  <div class="col-8">
+  <div class="col-8{% cycle '-first', '' %}">
     <p> {{item.paragraph}} </p>
   </div>
 </section>

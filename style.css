@@ -10,6 +10,11 @@
   src: url("/fonts/blueberry regular.otf");
 }
 
+@font-face {
+  font-family: "hannahandwriting";
+  src: url("/fonts/hannahandwriting.ttf");
+}
+
 /* .typography {} */
 span{
   color: #778f69;
@@ -25,16 +30,40 @@ h1 {
   color:
 }
 
+h2 {
+  font-family: blueberry regular;
+  color: #778f69;
+  font-size: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+p {
+  font-family: hannahandwriting;
+  font-size: 1rem;
+}
 .bg-image {
   background-size: cover;
   background-position: center;
 }
+
+.common-image img {
+  max-width: 70%;
+  border-radius: 10%;
+  margin:auto;
+  display: block;
+}
+
+
 /* Headers and footers  */
+body:not(.home) {
+  padding: 15rem 5% 0;
+  background: url(/images/backgroundfade-01.jpg) repeat-x top center;
+}
+
 
 header {
   position: absolute;
@@ -80,19 +109,30 @@ header .logo img {
   margin-top: -45px;
 }
 
-
-footer {
+.home footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 3;
+
+}
+
+footer {
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
   color: #9a80b0;
 }
+
 footer a {
   padding: 1rem;
   border-top: solid 1px #9a80b0;
 }
+
+/* page classes */
+.book  {
+  margin:5%
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
