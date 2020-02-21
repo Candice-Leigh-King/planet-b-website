@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+  font-family: "blueberry regular";
+  src: url("/fonts/blueberry regular.otf");
+}
+
+/*  Utility Classes  */
+
+.centered {
+  text-align: center;
+}
+
+h1 {
+  font-family: blueberry regular;
+  color:
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+}
+/* Headers and footers  */
+
+header {
+  position: absolute;
+    top: 1rem;
+    left: 5%;
+    right: 5%;
+    z-index: 3;
+    background-color: d5b1ce;
+    border-radius: 32px;
+    padding: 1.2rem;
+    max-width: 82%;
+    margin: 2rem auto 0;
+}
+
+.header-inner {
+  background-color: ebd1db;
+    border-radius: 23px;
+}
+
+ header a {
+   padding: 0.5rem 1rem;
+     background-color: white;
+     border: 6px solid #fdf2f7;
+     border-radius: 1rem;
+     display: inline-block;
+     color: inherit;
+     text-decoration: none;
+     margin: -1rem 2rem;
+     line-height: 1;
+     vertical-align: middle;
+     font-family: blueberry regular;
+     font-size: 1rem;
+}
+
+
+header .logo img {
+  max-width: 113px;
+    margin-top: -45px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}

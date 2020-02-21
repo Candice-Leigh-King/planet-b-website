@@ -5,43 +5,56 @@
     <!-- Gridlex -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
     <!-- our own custom stylesheet -->
-
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="/slick/slick.css"/>
+    <link rel="stylesheet" href="/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/style.css"/>
 </head>
 
-<body>
-<header>
-  <header class="grid-center">
-    <nav class="col-4-middle right">
+<body class="home">
+
+  <header>
+    <div class="header-inner centered">
       <a href="#"> Story </a>
       <a href="#"> Shop </a>
-    </nav>
-    <div class="col-2-middle centered">
-      <a href="/">
-        <h2 class="logo"> LOGO </h2>
+      <a href="/" class="logo">
+          <img src="/images/logo-for-web-01.png">
+          <h1> Planet B </h2>
       </a>
-    </div>
-    <nav class="col-4-middle">
       <a href="#"> Explore </a>
       <a href="#"> Connect </a>
-    </nav>
+  </div>
 </header>
 
 <!-- insert java page turn -->
+<div class="image-slider">
+  <div class="bg-image" style="background-image: url('/images/bg1.jpg');"> </div>
+  <div class="bg-image" style="background-image: url('/images/bg2.jpg');"> </div>
+  <div class="bg-image" style="background-image: url('/images/bg3.jpg');"> </div>
+</div>
 
 
 <footer>
-  <section>
-    <div class="col-12">
-      <nav>
-        <a href="#"> Facebook </a>
-        <a href="#"> Instagram </a>
-        <a href="#"> Pinterest </a>
-        <a href="#"> Youtube </a>
-      </nav>
-    </div>
-  </section>
+    <nav>
+      <a href="#"> Facebook </a>
+      <a href="#"> Instagram </a>
+      <a href="#"> Pinterest </a>
+      <a href="#"> Youtube </a>
+    </nav>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="/slick/slick.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  $('.image-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
+});
+
+</script>
 
 </body>
 </html>
