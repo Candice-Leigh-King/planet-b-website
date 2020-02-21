@@ -10,6 +10,10 @@
   src: url("/fonts/blueberry regular.otf");
 }
 
+/* .typography {} */
+span{
+  color: #778f69;
+}
 /*  Utility Classes  */
 
 .centered {
@@ -19,6 +23,11 @@
 h1 {
   font-family: blueberry regular;
   color:
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .bg-image {
@@ -38,11 +47,13 @@ header {
     padding: 1.2rem;
     max-width: 82%;
     margin: 2rem auto 0;
+    border: solid 1px #9a80b0;
 }
 
 .header-inner {
   background-color: ebd1db;
     border-radius: 23px;
+    border: solid 1px #9a80b0;
 }
 
  header a {
@@ -57,13 +68,16 @@ header {
      line-height: 1;
      vertical-align: middle;
      font-family: blueberry regular;
-     font-size: 1rem;
+     font-size: 1.3rem;
+     color: #49583d;
+
+
 }
 
 
 header .logo img {
   max-width: 113px;
-    margin-top: -45px;
+  margin-top: -45px;
 }
 
 
@@ -73,4 +87,12 @@ footer {
   left: 0;
   right: 0;
   z-index: 3;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #9a80b0;
+}
+footer a {
+  padding: 1rem;
+  border-top: solid 1px #9a80b0;
 }
