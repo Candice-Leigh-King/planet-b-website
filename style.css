@@ -6,8 +6,8 @@
 
 /* fonts */
 @font-face {
-  font-family: "blueberry regular";
-  src: url("/fonts/blueberry regular.otf");
+  font-family: "blueberry";
+  src: url("/fonts/blueberryregular.otf");
 }
 
 @font-face {
@@ -26,12 +26,12 @@ span{
 }
 
 h1 {
-  font-family: blueberry regular;
+  font-family: blueberry;
   color:
 }
 
 h2 {
-  font-family: blueberry regular;
+  font-family: blueberry;
   color: #778f69;
   font-size: 1.5rem;
 }
@@ -96,7 +96,7 @@ header {
      margin: -1rem 2rem;
      line-height: 1;
      vertical-align: middle;
-     font-family: blueberry regular;
+     font-family: blueberry;
      font-size: 1.3rem;
      color: #49583d;
 
