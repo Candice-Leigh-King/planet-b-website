@@ -1,61 +1,61 @@
 <!DOCTYPE html>
+<html>
+    <head>
+      <title>{{page.title}}</title>
+        <!-- Gridlex -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
+        <!-- our own custom stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/slick/slick.css"/>
+        <link rel="stylesheet" href="/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="/style.css"/>
+      </head>
 
-<head>
-  <title>{{page.title}}</title>
-    <!-- Gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
-    <!-- our own custom stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/slick/slick.css"/>
-    <link rel="stylesheet" href="/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="/style.css"/>
-</head>
+  <body class="{{page.class}}">
 
-<body class="{{page.class}}">
+    <header>
+      <div class=" header-inner centered">
+        <!-- <a href="/story.html" class = "grow"> story </a> -->
+        <!-- <a href="/shop.html" class = "grow"> shop </a> -->
+        <!-- <a href="/index.html" class="logo grow">
+            <img src="/images/logo-for-web-01.png">
+            <h1> Planet <span>B</span> </h1>
+        </a> -->
+        <a href="video\doug-the-litterbug-reading.wmv" download class="logo grow">
+            <img src="/images/logo-for-web-01.png">
+            <h1> Download<span> Reading</span> </h1>
+        </a>
+        <!-- <a href="explore.html" class ="grow"> explore </a> -->
+        <!-- <a href="connect.html" class ="grow"> connect </a> -->
+    </div>
+  </header>
 
-  <header>
-    <div class=" header-inner centered">
-      <!-- <a href="/story.html" class = "grow"> story </a> -->
-      <!-- <a href="/shop.html" class = "grow"> shop </a> -->
-      <!-- <a href="/index.html" class="logo grow">
-          <img src="/images/logo-for-web-01.png">
-          <h1> Planet <span>B</span> </h1>
-      </a> -->
-      <a href="video\doug-the-litterbug-reading.wmv" download class="logo grow">
-          <img src="/images/logo-for-web-01.png">
-          <h1> Download<span> Reading</span> </h1>
-      </a>
-      <!-- <a href="explore.html" class ="grow"> explore </a> -->
-      <!-- <a href="connect.html" class ="grow"> connect </a> -->
-  </div>
-</header>
+  {{content}}
 
-{{content}}
+    <footer class="col-12 center">
+      <nav class="inline socials">
+        <a href="https://www.facebook.com/PlanetB.projects/"target="_blank" class="grow">
+          <i class="fab fa-facebook-square grow"></i>
+        </a>
+        <a href = "<a href="mailto:hello@candyandtheking.com">
+            <i class="far fa-envelope grow"></i>
+        </a>
+      </nav>
+    </footer>
 
-<footer class="col-12 center">
-  <nav class="inline socials">
-    <a href="https://www.facebook.com/PlanetB.projects/"target="_blank" class="grow">
-      <i class="fab fa-facebook-square grow"></i>
-    </a>
-    <a href = "<a href="mailto:hello@candyandtheking.com">
-        <i class="far fa-envelope grow"></i>
-    </a>
-  </nav>
-</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/slick/slick.min.js"></script>
+    <script>
 
-<script src="/slick/slick.min.js"></script>
-<script>
+    $(document).ready(function(){
+      $('.image-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000
+      });
+    });
 
-$(document).ready(function(){
-  $('.image-slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000
-  });
-});
+    </script>
 
-</script>
-
-</body>
+  </body>
 </html>
