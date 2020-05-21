@@ -18,7 +18,11 @@
 .link {
   font-size: 0.8rem;
   color: #9a80b0;}
-  
+
+.link a {
+  font-size: 0.8rem;
+  color: #778f69;}
+
 /* .typography {} */
 span{
   color: #778f69;
