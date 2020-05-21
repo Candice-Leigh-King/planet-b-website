@@ -15,6 +15,9 @@
   src: url("/fonts/hannahandwriting.ttf");
 }
 
+.link {
+  font-size: 0.8rem;
+  color: #9a80b0;}
 /* .typography {} */
 span{
   color: #778f69;
