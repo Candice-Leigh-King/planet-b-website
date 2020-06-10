@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;}
+
+
 /* fonts */
 @font-face {
   font-family: "blueberry";
